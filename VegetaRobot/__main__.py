@@ -109,7 +109,7 @@ buttons = [
                        InlineKeyboardButton(text=f"{TextFont('UPDATES')}",  url=f"https://t.me/{UPDATES_CHANNEL}"),
                     ],
                    [
-                       InlineKeyboardButton(text=f"{TextFont('NETWORK')}", url=f"https://t.me/rACISTS_NETWORK"),
+                       InlineKeyboardButton(text=f"{TextFont('OWNER')}", url=f"https://t.me/betluckers"),
                        InlineKeyboardButton(text=f"{TextFont('MUSIC')}", url=f"https://t.me/MADARAMUSICHELP"),
                 ],[ InlineKeyboardButton(text=f"{TextFont('COMMANDS HELP')}", callback_data="help_back"
          ),
