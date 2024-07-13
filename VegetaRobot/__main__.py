@@ -88,20 +88,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ 
-*┗► What's Up, Earthling! ◄┛*
+*┗► What's Up, Failure! ◄┛*
 
-~~ *I am the Prince of All Saiyans, Vegeta!* ~~
+~~ *I am the Ghost of Uchiha, Madara Uchiha!* ~~
 
 ~ *Prepare yourself for my commands! ~
 Click the help button below if you dare* [❗]({})
 
-──『 *You better be ready to train hard!* 』──
+──『 *You Should Give Up Failure!* 』──
 """ 
 
 buttons = [
     [
         InlineKeyboardButton(
-                            text=f"{TextFont('ADD VEGETA TO GROUP')}",
+                            text=f"{TextFont('ADD MADARA TO GROUP')}",
                             url=f"t.me/{BOT_USERNAME}?startgroup=true"),
                     ],
                      [
@@ -109,8 +109,8 @@ buttons = [
                        InlineKeyboardButton(text=f"{TextFont('UPDATES')}",  url=f"https://t.me/{UPDATES_CHANNEL}"),
                     ],
                    [
-                       InlineKeyboardButton(text=f"{TextFont('NETWORK')}", url=f"https://t.me/nandhabots"),
-                       InlineKeyboardButton(text=f"{TextFont('LOGS')}", url=f"https://t.me/vegetalogs"),
+                       InlineKeyboardButton(text=f"{TextFont('NETWORK')}", url=f"https://t.me/rACISTS_NETWORK"),
+                       InlineKeyboardButton(text=f"{TextFont('MUSIC')}", url=f"https://t.me/MADARAMUSICHELP"),
                 ],[ InlineKeyboardButton(text=f"{TextFont('COMMANDS HELP')}", callback_data="help_back"
          ),
     ],
@@ -124,13 +124,13 @@ Below Click the module you know about module commands!*
 """
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """*don't need donate I'm free for everyone add your group's in @VegetaRobot this is my donate🙂*"""
-HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
-GROUPSTART_IMG= "https://telegra.ph/file/1cbafa58dda18528f9e0c.mp4"
+DONATE_STRING = """*don't need donate I'm free for everyone add your group's in @Madara_ixbot this is my donate🙂*"""
+HELP_IMG= "https://graph.org/file/8703b9772d6fe1fbbfd2c.mp4"
+GROUPSTART_IMG= "https://graph.org/file/dee8aca4f0dc4e3981960.mp4"
 
-VEGETA_IMG = ( "https://telegra.ph//file/a47f16c936dbbd4165399.jpg",
-               "https://telegra.ph//file/5026650d5e3f0b83c6d29.jpg",
-               "https://telegra.ph/file/561fa547f3c4940c95ddf.jpg",)       
+VEGETA_IMG = ( "https://te.legra.ph/file/c2c31e10e1206a7e165e9.mp4",
+               "https://graph.org/file/af95eaac2bb619e1fc3e1.mp4",
+               "https://graph.org/file/ce997bae393ef8016d697.mp4",)       
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -678,7 +678,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[PRINCE VEGETA RETURNS](https://telegra.ph/file/d3db0babad0d1729c5f59.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[GHOST OF UCHIHA](https://graph.org/file/8703b9772d6fe1fbbfd2c.mp4)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
@@ -732,7 +732,7 @@ def main():
             )
 
     else:
-        LOGGER.info("Vegeta Is Now Alive And Functioning")
+        LOGGER.info("Madara Is Now Alive And Functioning")
       
         updater.start_polling(
              timeout=25, 
